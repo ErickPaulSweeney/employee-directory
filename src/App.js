@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <h1 className='header'>Users at Acme Inc.</h1>
       <div className='container-cards'>
-        {users.map(user => <UserCard user={user} />)}
+        {users.map(user => <UserCard key={user.login.uuid} user={user} />)}
       </div>
     </div>
   );
